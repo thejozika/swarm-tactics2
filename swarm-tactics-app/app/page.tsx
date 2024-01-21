@@ -19,6 +19,7 @@ export default function Home() {
               auth={auth} 
             />
         }
+        <GameCanvasTestComponent />
       </div>
     </main>
   );
