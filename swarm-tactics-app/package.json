@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@prisma/client": "^5.8.1",
+    "@uiw/codemirror-theme-vscode": "^4.21.21",
+    "@uiw/react-codemirror": "^4.21.21",
     "next": "14.1.0",
     "prisma": "^5.8.1",
     "react": "^18",

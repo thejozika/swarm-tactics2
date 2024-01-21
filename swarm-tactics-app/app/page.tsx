@@ -3,14 +3,13 @@
 import Login from "@/components/login";
 import Navigation from "@/components/navigation";
 import { useAuth } from "@/lib/hooks/auth";
-import GameCanvasTestComponent from "@/component/GameCanvasTestComponent";
 
 export default function Home() {
   const auth = useAuth();
 
   return (
     <main className="flex justify-center items-center h-screen">
-      <div className="border p-8 max-w-md w-full">
+      <div className="border p-8">
         {auth.loggedIn 
           ? <Navigation
               logout={auth.logout}
