@@ -1,8 +1,9 @@
 'use client';
 
-import Login from "./components/login";
-import Navigation from "./components/navigration";
-import { useAuth } from "./hooks/auth";
+import Login from "@/components/login";
+import Navigation from "@/components/navigation";
+import { useAuth } from "@/lib/hooks/auth";
+import GameCanvasTestComponent from "@/component/GameCanvasTestComponent";
 
 export default function Home() {
   const auth = useAuth();

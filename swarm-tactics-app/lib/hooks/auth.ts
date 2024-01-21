@@ -1,19 +1,13 @@
 'use client';
 
-import { Prisma } from "@prisma/client";
-import { db } from "@/lib/db";
 import { useState } from "react";
+import {fetch_login} from "@/lib/fetch/fetch_login";
 
 export function useAuth () {
     const [loggedIn, setLoggedIn] = useState(false);
     
     const login = async (name: string, password: string) => {
-        const user = await db.user.findUnique({
-            where: {
-                name,
-                password
-            }
-        });
+        const user = await fetch_login(name,password)
 
         if (!user) {
             throw new Error('User not found');

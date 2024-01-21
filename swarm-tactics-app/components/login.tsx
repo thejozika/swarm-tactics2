@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from "react";
-import { Auth } from "../hooks/auth";
+import { Auth } from "@/lib/hooks/auth";
 
 interface LoginProps {
     auth: Auth;
